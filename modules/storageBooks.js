@@ -1,18 +1,17 @@
-import Book from "./book.js";
-import getLi from "./getLi.js";
+import Book from './book.js';
+import getLi from './getLi.js';
 
 const bookList = document.getElementById('book-list');
 const newTitle = document.getElementById('new-title');
 const newAuthor = document.getElementById('new-author');
 
 export default class StorageBooks {
-
   static storeData(bookData) {
     localStorage.setItem('bookData', JSON.stringify(bookData));
     document.querySelectorAll('.remove').forEach((button) => {
-      button.addEventListener('click', (e) => {
+      button.addEventListener('click', () => {
         StorageBooks.removeLi(Number(button.id));
-      })
+      });
     });
   }
 
@@ -25,9 +24,9 @@ export default class StorageBooks {
       });
     }
     document.querySelectorAll('.remove').forEach((button) => {
-      button.addEventListener('click', (e) => {
+      button.addEventListener('click', () => {
         StorageBooks.removeLi(Number(button.id));
-      })
+      });
     });
   }
 
@@ -37,12 +36,11 @@ export default class StorageBooks {
     bookData = bookData.filter((book) => book.id !== id);
     StorageBooks.storeData(bookData);
     li.remove();
-    
   }
 
   static addLi() {
     if (newTitle.value && newAuthor.value) {
-      let bookData = JSON.parse(localStorage.getItem('bookData'));
+      const bookData = JSON.parse(localStorage.getItem('bookData'));
       const id = Date.now();
       const book = new Book(newTitle.value, newAuthor.value, id);
       bookData.push(book);
