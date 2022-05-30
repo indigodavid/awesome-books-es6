@@ -4,6 +4,6 @@ const clearClasses = (element1, element2) => {
 
   element2.classList.remove('active');
   element2.classList.add('hide-class');
-}
+};
 
 export default clearClasses;
