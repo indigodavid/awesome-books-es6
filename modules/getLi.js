@@ -6,8 +6,6 @@ const getLi = (title, author, id) => {
   div.classList.add('book-info');
   removeButton.classList.add('remove');
   removeButton.setAttribute('id', id);
-  // removeButton.setAttribute('onclick', `javascript:StorageBooks.removeLi(${id})`);
-  // removeButton.setAttribute('value', `${id}`);
   li.classList.add('book');
   li.setAttribute('id', `book${id}`);
 
