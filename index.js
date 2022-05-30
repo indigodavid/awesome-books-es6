@@ -37,9 +37,3 @@ contactLink.addEventListener('click', () => {
   toggleVisbility(contactSection);
   clearClasses(allBooksSection, addNewBookSection);
 });
-
-document.querySelectorAll('.remove').forEach((button) => {
-  button.addEventListener('click', (e) => {
-    StorageBooks.removeLi(button.id);
-  })
-});
