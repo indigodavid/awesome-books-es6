@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+fieldset {
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+ul a:hover {
+  color: rgb(58, 204, 4);
+  transition-duration: 0.1s;
+  transform: scale(1.1);
+}
+
+ul a:active {
+  color: green;
+  transform: scale(1.1);
+}
+
+button {
+  appearance: none;
+  border: solid 1px #000;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+hr {
+  margin: 2rem auto;
+  width: 10%;
+  border-width: 2px;
+  border-color: #000;
+  background-color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 96%;
+  margin: 1rem auto 0;
+  border: solid 1px #000;
+}
+
+nav > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer {
+  width: 96%;
+  border: solid 1px #000;
+  padding: 1rem;
+  margin: 0 auto 1rem;
+}
+
+.remove {
+  align-self: flex-end;
+  appearance: none;
+  box-shadow: 5px 5px black;
+  padding: 0.5rem;
+  transition-duration: 0.1s;
+}
+
+.remove:hover {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+.remove:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+  background-color: rgb(156, 147, 147);
+}
+
+.wrapper {
+  /* display: inline-block; */
+}
+
+#new-book {
+  width: 96%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  gap: 1rem;
+  border: none;
+}
+
+#new-book > * {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+#add-book {
+  padding: 0.5rem;
+  appearance: none;
+  box-shadow: 5px 5px black;
+  float: right;
+  transition-duration: 0.1s;
+}
+
+#add-book:hover {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+#add-book:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+  background-color: rgb(156, 147, 147);
+}
+
+#all-books {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  width: 96%;
+  margin: 0 auto 1rem;
+}
+
+#book-list li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ccc;
+  align-items: center;
+}
+
+#book-list li:nth-child(2n) {
+  background-color: #fff;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact > * {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#contact a {
+  text-decoration: underline;
+}
+
+#contact > ul {
+  list-style: square;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#date {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: right;
+  width: 96%;
+}
+
+/*
+Activate and Deactivate styles
+*/
+.hide-class {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  transition-duration: 0.4s;
+}
+
+.hide-class.active {
+  left: 0;
+}
