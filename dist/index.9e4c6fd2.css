@@ -1,10 +1,9 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 li {
@@ -16,8 +15,8 @@ fieldset {
 }
 
 a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 
 a:visited {
@@ -25,8 +24,8 @@ a:visited {
 }
 
 ul a:hover {
-  color: rgb(58, 204, 4);
-  transition-duration: 0.1s;
+  color: #3acc04;
+  transition-duration: .1s;
   transform: scale(1.1);
 }
 
@@ -37,12 +36,11 @@ ul a:active {
 
 button {
   appearance: none;
-  border: solid 1px #000;
   background-color: #fff;
+  border: 1px solid #000;
 }
 
-h1,
-h2 {
+h1, h2 {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -57,104 +55,102 @@ h2 {
 }
 
 hr {
-  margin: 2rem auto;
   width: 10%;
+  background-color: #000;
   border-width: 2px;
   border-color: #000;
-  background-color: #000;
+  margin: 2rem auto;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
   width: 96%;
+  border: 1px solid #000;
+  justify-content: space-between;
   margin: 1rem auto 0;
-  border: solid 1px #000;
+  padding: 1rem;
+  display: flex;
 }
 
 nav > ul {
-  display: flex;
   gap: 1.5rem;
+  display: flex;
 }
 
 footer {
   width: 96%;
-  border: solid 1px #000;
-  padding: 1rem;
+  border: 1px solid #000;
   margin: 0 auto 1rem;
+  padding: 1rem;
 }
 
 .remove {
-  align-self: flex-end;
   appearance: none;
-  box-shadow: 5px 5px black;
-  padding: 0.5rem;
-  transition-duration: 0.1s;
+  align-self: flex-end;
+  padding: .5rem;
+  transition-duration: .1s;
+  box-shadow: 5px 5px #000;
 }
 
 .remove:hover {
-  transform: translate(5px, 5px);
   box-shadow: none;
+  transform: translate(5px, 5px);
 }
 
 .remove:active {
-  transform: translate(5px, 5px);
   box-shadow: none;
-  background-color: rgb(156, 147, 147);
+  background-color: #9c9393;
+  transform: translate(5px, 5px);
 }
 
 #new-book {
   width: 96%;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  padding: 0 2rem;
-  gap: 1rem;
   border: none;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: flex;
 }
 
 #new-book > * {
   width: 50%;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: .5rem;
 }
 
 #add-book {
-  padding: 0.5rem;
   appearance: none;
-  box-shadow: 5px 5px black;
   float: right;
-  transition-duration: 0.1s;
+  padding: .5rem;
+  transition-duration: .1s;
+  box-shadow: 5px 5px #000;
 }
 
 #add-book:hover {
-  transform: translate(5px, 5px);
   box-shadow: none;
+  transform: translate(5px, 5px);
 }
 
 #add-book:active {
-  transform: translate(5px, 5px);
   box-shadow: none;
-  background-color: rgb(156, 147, 147);
+  background-color: #9c9393;
+  transform: translate(5px, 5px);
 }
 
 #all-books {
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
   width: 96%;
+  border: 2px solid #000;
   margin: 0 auto 1rem;
 }
 
 #book-list li {
-  list-style: none;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
   background-color: #ccc;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  list-style: none;
+  display: flex;
 }
 
 #book-list li:nth-child(2n) {
@@ -162,8 +158,8 @@ footer {
 }
 
 #contact {
-  display: flex;
   flex-direction: column;
+  display: flex;
 }
 
 #contact > * {
@@ -176,30 +172,29 @@ footer {
 }
 
 #contact > ul {
-  list-style: square;
-  padding-left: 2rem;
-  display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-left: 2rem;
+  list-style: square;
+  display: flex;
 }
 
 #date {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
   text-align: right;
   width: 96%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-/*
-Activate and Deactivate styles
-*/
 .hide-class {
+  transition-duration: .4s;
   position: fixed;
   top: 0;
   left: -110%;
-  transition-duration: 0.4s;
 }
 
 .hide-class.active {
   left: 0;
 }
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
