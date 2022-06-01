@@ -40,7 +40,7 @@ export default class StorageBooks {
 
   static addLi() {
     if (newTitle.value && newAuthor.value) {
-      const bookData = JSON.parse(localStorage.getItem('bookData'));
+      const bookData = localStorage.getItem('bookData') ? JSON.parse(localStorage.getItem('bookData')) : [];
       const id = Date.now();
       const book = new Book(newTitle.value, newAuthor.value, id);
       bookData.push(book);
